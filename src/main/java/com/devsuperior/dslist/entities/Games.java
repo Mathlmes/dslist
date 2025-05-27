@@ -19,15 +19,13 @@ public class Games {
     private String imgUrl;
     private String shortDescription;
     private String longDescription;
-    private String description;
-    private String doug;
 
 
     public Games() {
     }
 
 
-    public Games(String doug,Long id, String title, Integer year, String genre, String plataform, String imgUrl, String shortDescription, String longDescription, String description) {
+    public Games(Long id, String title, Integer year, String genre, String plataform, String imgUrl, String shortDescription, String longDescription) {
         this.id = id;
         this.title = title;
         this.year = year;
@@ -36,17 +34,6 @@ public class Games {
         this.imgUrl = imgUrl;
         this.shortDescription = shortDescription;
         this.longDescription = longDescription;
-        this.description = description;
-        this.doug = doug;
-    }
-
-
-    public String getDoug() {
-        return doug;
-    }
-
-    public void setDoug(String doug) {
-        this.doug = doug;
     }
 
     public Long getId() {
@@ -113,13 +100,7 @@ public class Games {
         this.longDescription = longDescription;
     }
 
-    public String getDescription() {
-        return description;
-    }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
 
     @Override
     public boolean equals(Object o) {
