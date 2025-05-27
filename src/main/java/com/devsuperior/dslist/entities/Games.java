@@ -20,13 +20,14 @@ public class Games {
     private String shortDescription;
     private String longDescription;
     private String description;
+    private String doug;
 
 
     public Games() {
     }
 
 
-    public Games(Long id, String title, Integer year, String genre, String plataform, String imgUrl, String shortDescription, String longDescription, String description) {
+    public Games(String doug,Long id, String title, Integer year, String genre, String plataform, String imgUrl, String shortDescription, String longDescription, String description) {
         this.id = id;
         this.title = title;
         this.year = year;
@@ -36,6 +37,16 @@ public class Games {
         this.shortDescription = shortDescription;
         this.longDescription = longDescription;
         this.description = description;
+        this.doug = doug;
+    }
+
+
+    public String getDoug() {
+        return doug;
+    }
+
+    public void setDoug(String doug) {
+        this.doug = doug;
     }
 
     public Long getId() {
